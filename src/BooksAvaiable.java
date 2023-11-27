@@ -114,6 +114,7 @@ public class BooksAvaiable extends javax.swing.JFrame {
             stm.close();
        }catch(Exception e){
            JOptionPane.showMessageDialog(this, e.getMessage());
+           
        }
         
     }//GEN-LAST:event_fetchActionPerformed

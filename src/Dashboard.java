@@ -120,6 +120,7 @@ public class Dashboard extends javax.swing.JFrame {
         // TODO add your handling code here:
         BooksAvaiable books = new BooksAvaiable();
         books.setVisible(true);
+        
     }//GEN-LAST:event_b1ActionPerformed
       
   

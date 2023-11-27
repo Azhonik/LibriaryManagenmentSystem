@@ -140,7 +140,7 @@ public class LoginPage extends javax.swing.JFrame {
                     dsh.setVisible(true);
                     this.dispose();
                 }else{
-                    JOptionPane.showMessageDialog(this, "username or password is invalid");
+                    JOptionPane.showMessageDialog(this, "username or password is invalid. Try again.");
                 }
             }else{
                  JOptionPane.showMessageDialog(this, "Wrong username.");
