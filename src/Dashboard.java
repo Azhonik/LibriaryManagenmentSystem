@@ -50,15 +50,30 @@ public class Dashboard extends javax.swing.JFrame {
 
         b2.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
         b2.setText("ADD BOOKS");
+        b2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b2ActionPerformed(evt);
+            }
+        });
 
         b3.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
         b3.setText("REMOVE BOOKS");
 
         b4.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
         b4.setText("STAFF DETAILS");
+        b4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b4ActionPerformed(evt);
+            }
+        });
 
         b5.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
         b5.setText("ADD STAFF");
+        b5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b5ActionPerformed(evt);
+            }
+        });
 
         b6.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
         b6.setText("REMOVE STAFF");
@@ -122,6 +137,25 @@ public class Dashboard extends javax.swing.JFrame {
         books.setVisible(true);
         
     }//GEN-LAST:event_b1ActionPerformed
+
+    private void b2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b2ActionPerformed
+        // TODO add your handling code here:
+        AddBook addBook = new AddBook();
+        addBook.setVisible(true);
+    }//GEN-LAST:event_b2ActionPerformed
+
+    private void b4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b4ActionPerformed
+        // TODO add your handling code here:
+        StaffDetails staffDetails = new StaffDetails();
+        staffDetails.setVisible(true);
+    }//GEN-LAST:event_b4ActionPerformed
+
+    private void b5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b5ActionPerformed
+        // TODO add your handling code here:
+        AddStaff addStaff = new AddStaff();
+        addStaff.setVisible(true);
+        
+    }//GEN-LAST:event_b5ActionPerformed
       
   
     /**
