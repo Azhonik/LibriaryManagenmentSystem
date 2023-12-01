@@ -102,6 +102,7 @@ public class BooksAvaiable extends javax.swing.JFrame {
             Connection conn = DriverManager.getConnection(url, user, pwd);
             Statement stm = conn.createStatement();
             ResultSet rs = stm.executeQuery(query);
+            model.setRowCount(0);
             while(rs.next()){
                 String bookid = rs.getString("BOOK_ID");
                 String category = rs.getString("CATEGORY");
@@ -109,13 +110,19 @@ public class BooksAvaiable extends javax.swing.JFrame {
                 String author = rs.getString("AUTHOR");
                 int copies = rs.getInt("COPIES");
                 model.addRow(new Object[]{bookid, category, name, author, copies});
+                
             }
+            
+           JOptionPane.showMessageDialog(this, "All books that are avaiable"); 
+              
+           
             rs.close();
             stm.close();
        }catch(Exception e){
            JOptionPane.showMessageDialog(this, e.getMessage());
            
        }
+       
         
     }//GEN-LAST:event_fetchActionPerformed
 

@@ -58,6 +58,11 @@ public class Dashboard extends javax.swing.JFrame {
 
         b3.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
         b3.setText("REMOVE BOOKS");
+        b3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b3ActionPerformed(evt);
+            }
+        });
 
         b4.setFont(new java.awt.Font("Segoe UI", 1, 15)); // NOI18N
         b4.setText("STAFF DETAILS");
@@ -156,6 +161,12 @@ public class Dashboard extends javax.swing.JFrame {
         addStaff.setVisible(true);
         
     }//GEN-LAST:event_b5ActionPerformed
+
+    private void b3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b3ActionPerformed
+        // TODO add your handling code here:
+        RemoveBook removeBook = new RemoveBook();
+        removeBook.setVisible(true);
+    }//GEN-LAST:event_b3ActionPerformed
       
   
     /**
